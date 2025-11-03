@@ -26,7 +26,7 @@ header .highlight {
   font-weight: 400;
 }
 
-.span {
+header .span h1 {
   display: block;
 }
 
