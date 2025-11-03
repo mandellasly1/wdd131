@@ -4,7 +4,7 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 // Dynamically set last modified date
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-
+// scripts/getdates.js
 const script = document.createElement('script');
 script.src = 'getdates.js';
 document.head.appendChild(script);
