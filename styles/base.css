@@ -21,9 +21,9 @@ header {
 }
 
 header .highlight {
-color: rgb(92, 247, 61);
-font-size: 1.6rem;
-font-weight: 400;
+  color: rgb(92, 247, 61);
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 nav ul {
@@ -168,3 +168,7 @@ footer .last-modified {
   font-size: 1rem;
 }
 
+:hover {
+  background-color: gray;
+  color: white;
+}
