@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Schedule Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    #controls {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="courseName"></h1>
+
+  <table id="sections">
+    <thead>
+      <tr>
+        <th>Section</th>
+        <th>Enrolled</th>
+        <th>Instructor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- rows will be injected here -->
+    </tbody>
+  </table>
+
+  <div id="controls">
+    <h2>Add a New Section</h2>
+    <label>
+      Section Number: <input type="text" id="newSection">
+    </label>
+    <label>
+      Enrolled: <input type="number" id="newEnrolled">
+    </label>
+    <label>
+      Instructor: <input type="text" id="newInstructor">
+    </label>
+    <button id="addSectionBtn">Add Section</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

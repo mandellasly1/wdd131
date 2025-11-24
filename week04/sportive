@@ -1,0 +1,186 @@
+✅ Project Planning & Hosting
+1. GitHub Hosting
+• 	Create a GitHub repository named after your project.
+• 	Push all your project files to this repo.
+• 	Enable GitHub Pages via repository settings (set source to  branch or  folder).
+• 	Confirm your site is live at .
+
+📄 Site Structure & Content
+2. Minimum Pages
+• 	At least three HTML pages (e.g., , , ).
+• 	All pages must:
+• 	Share a common navigation bar.
+• 	Follow a consistent theme (colors, fonts, layout).
+• 	Be fully functional—no placeholders.
+3. Content & Purpose
+• 	Content must align with your approved topic proposal.
+• 	Include meaningful text, images, and interactive elements.
+• 	Add a References page (e.g., ) with citations for any external content.
+
+🎨 Design & Accessibility
+4. HTML
+• 	Use semantic HTML5 elements: , , , , , .
+• 	Validate HTML using W3C Validator.
+5. CSS
+• 	Use external CSS ().
+• 	Avoid duplicate or unused rules.
+• 	Apply PARC principles: Proximity, Alignment, Repetition, Contrast.
+• 	Validate CSS using W3C CSS Validator.
+6. Responsive Design
+• 	Use media queries for mobile and desktop views.
+• 	Test on:
+• 	Mobile (portrait & landscape)
+• 	Tablet
+• 	Desktop
+7. Accessibility
+• 	Use  attributes for all images.
+• 	Ensure good color contrast.
+• 	Use ARIA roles if needed.
+• 	Ensure keyboard navigation works.
+
+🖼️ Images & Performance
+8. Image Optimization
+• 	Compress images using tools like TinyPNG.
+• 	Use modern formats like  if possible.
+9. Lazy Loading
+• 	Add  to  tags:
+
+
+🧾 HTML Form
+10. Form Requirements
+• 	Include a form (e.g., contact form or feedback form).
+• 	Use:
+• 	 with  attributes
+• 	, , , 
+• 	, , , etc.
+• 	Example:
+
+
+⚙️ JavaScript Functionality
+11. JavaScript Requirements
+Your JS must include:
+
+
+🧹 Final Touches
+12. Proofreading
+• 	Run a spell check on all content.
+• 	Read aloud to catch awkward phrasing or grammar issues.
+13. Reference Page
+• 	Create .
+• 	List all image/text sources.
+• 	Link to it in the footer:
+
+
+🧪 Testing & Submission
+14. Test Everything
+• 	Navigation links
+• 	Form submission
+• 	JavaScript functionality
+• 	Responsive layout
+• 	Lazy loading
+• 	Local storage persistence
+15. Submit
+• 	Ensure your GitHub Pages site is live.
+• 	Submit the URL of your GitHub Pages site by the due date.
+
+
+In index.html (root folder):
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/styles.css">
+<!-- JavaScript -->
+<script src="js/script.js" defer></script>
+
+
+In about/index.html (inside /about folder):
+
+<!-- CSS -->
+<link rel="stylesheet" href="../css/styles.css">
+<!-- JavaScript -->
+<script src="../js/script.js" defer></script>
+
+
+In contact/index.html (inside /contact folder):
+
+<!-- CSS -->
+<link rel="stylesheet" href="../css/styles.css">
+<!-- JavaScript -->
+<script src="../js/script.js" defer></script>
+
+
+🧠 Tips
+- Use ../ to go up one folder level.
+- Use defer in your <script> tag to ensure the script runs after the HTML is parsed.
+- Keep your CSS and JS in centralized folders like /css and /js to avoid duplication.
+
+
+Subject of the Website:
+Future Child Sportive
+Planned Content of the Website:
+The homepage (index.html) will introduce Future Child Sportive, a youth-focused initiative that promotes physical fitness, 
+teamwork, and personal development through sports. 
+The page will highlight the mission and vision of the program, showcase featured sports activities 
+(like football, athletics, and basketball), and include testimonials from participants and parents. 
+It will also provide a brief overview of upcoming events and a call-to-action for parents to enroll their children or support 
+the initiative. The site will include navigation to other pages such as About and Contact, 
+and a footer with references and social links.
+
+
+Reason for Choosing This Subject:
+I chose this subject because I believe in the power of sports to shape confident, disciplined, 
+and healthy children. Future Child Sportive represents a vision for nurturing the next generation through structured 
+physical activity and community engagement. 
+Creating this website is a way to share that vision and inspire others to support youth development 
+through sports.
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Child Sportive</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Future Child Sportive</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Empowering the Next Generation Through Sports</h2>
+      <p>Future Child Sportive is a youth initiative that nurtures confidence, discipline, and teamwork through structured sports programs.</p>
+
+    </section>  
+  </main>    
+
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Future Child Sportive. All rights reserved.</p>
+    <nav class="footer-nav">
+      <a href="../index.html">Home</a> |
+      <a href="../about/index.html">About</a> |
+      <a href="../contact/index.html">Contact</a> |
+      <a href="../references.html">References</a>
+    </nav>
+    <p>Follow us on:
+      <a href="https://facebook.com" target="_blank">Facebook</a>,
+      <a href="https://instagram.com" target="_blank">Instagram</a>,
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </p>
+  </div>
+</footer>
