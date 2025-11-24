@@ -80,14 +80,14 @@ const temples = [
     location: "Salt Lake City, Utah, United States",
     dedicated: "1893, April, 6",
     area: 253015,
-    imageUrl: "https://churchofjesuschrist.org/path-to-image.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/path-to-image.jpg"
   },
   {
     templeName: "Rome Italy",
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 41000,
-    imageUrl: "https://churchofjesuschrist.org/path-to-image.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/path-to-image.jpg"
   }
 
 ];
