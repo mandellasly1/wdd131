@@ -41,6 +41,11 @@ nav {
   flex-direction: column;
 }
 
+nav ul {
+  display: flex;
+  flex-flow: column;
+}
+
 nav a {
   text-decoration: none;
   padding: 0.5rem;
