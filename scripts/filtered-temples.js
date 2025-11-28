@@ -137,3 +137,85 @@ document.querySelectorAll("#navMenu a").forEach(link => {
     displayTemples(filtered);
   });
 });
+
+
+
+
+
+
+/* ================
+   Filtered Temples - Interactions
+   ================= */
+
+(function () {
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+  const yearEl = document.getElementById('year');
+  const lastModifiedEl = document.getElementById('lastModified');
+
+  /* Update footer metadata */
+  try {
+    if (yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.textContent = ` ${currentYear} `;
+    }
+    if (lastModifiedEl) {
+      // Use document.lastModified when available, else keep existing text
+      const lm = document.lastModified;
+      if (lm && lm.trim().length > 0) {
+        lastModifiedEl.textContent = lm;
+      }
+    }
+  } catch (_) {
+    // Non-fatal: ignore
+  }
+
+  /* Mobile nav toggle + accessibility */
+  function toggleNav(forceOpen) {
+    const willOpen = typeof forceOpen === 'boolean' ? forceOpen : !navMenu.classList.contains('open');
+    navMenu.classList.toggle('open', willOpen);
+    hamburger.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+  }
+
+  if (hamburger && navMenu) {
+    hamburger.setAttribute('aria-controls', 'navMenu');
+    hamburger.setAttribute('aria-expanded', 'false');
+    hamburger.setAttribute('aria-label', 'Toggle navigation');
+
+    hamburger.addEventListener('click', () => toggleNav());
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        toggleNav(false);
+        hamburger.focus();
+      }
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+      const withinMenu = navMenu.contains(e.target);
+      const isButton = hamburger.contains(e.target);
+      if (!withinMenu && !isButton && navMenu.classList.contains('open')) {
+        toggleNav(false);
+      }
+    });
+
+    // Close when a link is clicked (improves UX)
+    navMenu.addEventListener('click', (e) => {
+      const target = e.target;
+      if (target.tagName.toLowerCase() === 'a' && navMenu.classList.contains('open')) {
+        toggleNav(false);
+      }
+    });
+  }
+
+  /* Optional: simple active state for nav links (no routing) */
+  const navLinks = navMenu ? navMenu.querySelectorAll('a') : [];
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      navLinks.forEach((l) => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+})();

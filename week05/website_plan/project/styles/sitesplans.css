@@ -1,0 +1,29 @@
+:root {
+  --blue:#1e90ff; --orange:#ff6600; --text:#333; --bg:#f7f8fa; --line:#e6e6e6; --white:white
+}
+* {box-sizing:border-box}
+body {margin:0; background:var(--bg); color:var(--text); font-family:Inter, system-ui, Arial, sans-serif; line-height:1.7}
+h2,h3 {font-family:Montserrat, system-ui, Arial, sans-serif; color:var(--blue); margin:0.5rem 0}
+.site-header {background:var(--blue); color:#fff; padding:2rem 1.5rem; text-align:center}
+.site-header .tagline {color:#fff; opacity:0.9}
+.container {max-width:980px; margin:0 auto; padding:1.5rem}
+section {padding:1rem 0; border-bottom:1px solid var(--line)}
+ul {padding-left:1.25rem}
+.swatches {list-style:none; padding:0; margin:0}
+.swatches li {display:flex; align-items:center; gap:0.75rem; margin:0.35rem 0}
+.swatch {display:inline-block; width:24px; height:24px; border-radius:4px; border:1px solid var(--line)}
+.swatch.blue {background:var(--blue)}
+.swatch.orange {background:var(--orange)}
+.swatch.gray {background:#333}
+.swatch.bg {background:var(--bg)}
+.wireframe {margin-top:0.75rem; border:2px dashed #bbb; padding:1rem}
+.grid {display:grid; gap:8px}
+.grid.mobile {grid-template-columns:1fr}
+.grid.desktop {grid-template-columns:repeat(3,1fr)}
+.box {background:#fff; border:1px solid var(--line); padding:0.5rem; text-align:center; font-size:0.9rem}
+.box.hero {height:120px}
+.box.hero.wide {grid-column:1 / -1; height:160px}
+.box.header {grid-column:1 / -1}
+.box.footer {grid-column:1 / -1}
+.box.three {min-height:80px}
+.site-footer {background:var(--blue); color:#fff; padding:2rem 1.5rem; text-align:center}
