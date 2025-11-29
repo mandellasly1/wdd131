@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/forms-element-exam.css">
+  <script src="scripts/forms-element-exam.js" defer></script>
+</head>
+<body>
+  <h1>Product Review </h1>
+  <form method="get" action="review.html">
+    
+    <!-- Product Name -->
+    <label for="product">Product Name:</label>
+    <select id="product" name="product" required>
+      <option value="" disabled selected>Select a Product ...</option>
+      <!-- Options populated dynamically -->
+    </select>
+
+    <!-- Overall Rating -->
+    <fieldset>
+      <legend>Overall Rating:</legend>
+      <label><input type="radio" id="rating1" name="rating" value="1" required> ☆</label>
+      <label><input type="radio" id="rating2" name="rating" value="2"> ☆☆</label>
+      <label><input type="radio" id="rating3" name="rating" value="3"> ☆☆☆</label>
+      <label><input type="radio" id="rating4" name="rating" value="4"> ☆☆☆☆</label>
+      <label><input type="radio" id="rating5" name="rating" value="5"> ☆☆☆☆☆</label>
+    </fieldset>
+
+
+    <!-- Date of Installation -->
+    <label for="installDate">Date of Installation:</label>
+    <input type="date" id="installDate" name="installDate" required>
+
+    <!-- Useful Features -->
+    <fieldset class="vertical">
+      <legend>Which Features did you find useful in the products? </legend>
+      <legend>(check all that apply):</legend>
+      <label><input type="checkbox" id="feature1" name="features" value="durability"> Durability</label>
+      <label><input type="checkbox" id="feature2" name="features" value="design"> Design</label>
+      <label><input type="checkbox" id="feature3" name="features" value="performance"> Performance</label>
+      <label><input type="checkbox" id="feature4" name="features" value="ease-of-use">Ease of Use </label>
+    </fieldset>
+
+    <!-- Written Review -->
+    <label for="reviewText">Written Review:</label>
+    <textarea id="reviewText" name="reviewText" rows="4" cols="50"></textarea>
+
+    <!-- User Name -->
+    <label for="username">Your Name:</label>
+    <input type="text" id="username" name="username">
+
+    <!-- Submit -->
+    <input type="submit" value="Post Review">
+  </form>
+
+  <footer>
+    <p>&copy; 2025 🎗️<span id="currentyear"></span> Nelson Mandella Akpomah 🎗️ Nigeria</p>
+    <p> <span id="last-modified"> Last Modification: 31/10/2025 09:48:00 </span> </p></p>
+  </footer>
+</body>
+</html>
