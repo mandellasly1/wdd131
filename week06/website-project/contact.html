@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Future Child Sportive</title>
+  <link rel="stylesheet" href="styles/future-child.css" />
+  <script src="scripts/future-child.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="images/future-child-sportive.png" alt="Future Child Sportive logo" width="150" height="150" />
+      <h1>Future Child Sportive</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <h2>Get in Touch</h2>
+      <p>Interested in partnering, volunteering, or enrolling a child? Fill out the form below.</p>
+    </section>
+
+    <section class="contact-form">
+      <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your full name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email address" required />
+
+        <label for="role">I am a</label>
+        <select id="role" name="role" required>
+          <option value="">Select one</option>
+          <option value="parent">Parent/Guardian</option>
+          <option value="sponsor">Sponsor/Partner</option>
+          <option value="volunteer">Volunteer</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <label for="consent">
+          <input type="checkbox" id="consent" required /> 
+          I consent to have my message stored.
+          
+        </label>
+
+        <button type="submit" aria-label="Send your message">Send</button>
+        <p id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="contact-info">
+      <h3>Other Ways to Reach Us</h3>
+      <p>Email: info@futurechildsportive.org</p>
+      <p>Phone: +234-XXX-XXX-XXXX</p>
+      <p>Location: Bayelsa State, Nigeria</p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="references.html">References</a>
+    <small>&copy; <span id="year">2025</span> 🎗️ Future Child Sportive 🎗️ Nelson Mandella Akpomah 🎗️ Nigeria</small>
+    <p>Last Modified: <span id="lastModified">1/12/2025 13:48:00</span></p>
+  </footer>
+</body>
+</html>
